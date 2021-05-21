@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventActivity">
+
+    <EditText
+        android:id="@+id/event_name"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/text_event_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_name"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Day"
+        app:layout_constraintBottom_toTopOf="@+id/day_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_name"
+        app:layout_constraintVertical_bias="0.466"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/day_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_day"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/text_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_name"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Weekday"
+        app:layout_constraintBottom_toTopOf="@+id/month_spinner"
+        app:layout_constraintStart_toEndOf="@id/text_day"
+        app:layout_constraintTop_toBottomOf="@+id/event_name"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <Spinner
+        android:id="@+id/month_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toEndOf="@id/day_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/text_month"
+        app:layout_constraintVertical_bias="0.466" />
+
+
+    <TextView
+        android:id="@+id/text_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_name"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Year"
+        app:layout_constraintBottom_toTopOf="@+id/year_spinner"
+        app:layout_constraintStart_toEndOf="@id/text_month"
+        app:layout_constraintTop_toBottomOf="@+id/event_name"
+        app:layout_constraintVertical_bias="0.466"
+        android:visibility="invisible"/>
+
+    <Spinner
+        android:id="@+id/year_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toEndOf="@id/month_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/text_year"
+        app:layout_constraintVertical_bias="0.466"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/text_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/day_spinner"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/start_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_spinner"
+        android:layout_marginStart="50dp" />
+
+    <Spinner
+        android:id="@+id/hour_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_start_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_start_time"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/min_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_start_time"
+        app:layout_constraintStart_toEndOf="@id/hour_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/text_start_time"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/am_pm_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_start_time"
+        app:layout_constraintStart_toEndOf="@id/min_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/text_start_time"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/text_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_start_time"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/end_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_start_time"
+        android:layout_marginStart="50dp" />
+
+    <Spinner
+        android:id="@+id/hour_spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_end_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_end_time"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/min_spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_end_time"
+        app:layout_constraintStart_toEndOf="@id/hour_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/text_end_time"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/am_pm_spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_end_time"
+        app:layout_constraintStart_toEndOf="@id/min_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/text_end_time"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:text="Confirm Event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="125dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/min_spinner2"
+        android:onClick="ConfirmEvent"
+        android:layout_marginStart="125dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

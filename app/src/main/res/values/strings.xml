@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">ConnectWithFriends</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_calendar">Calendar</string>
+    <string name="menu_contacts">Contacts</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_achievements">Achievements</string>
+    <string name="badges_achievements">Badges</string>
+    <string name="points_achievements">Points</string>
+    <string name="points_value_achievements">20</string>
+    <string name="badge_value_achievements">10</string>
+    <string name="achievement_text_ahievements">Achievements</string>
+
+    <string-array name="frequency_array">
+        <item>Never</item>
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>3 days</item>
+        <item>4 days</item>
+        <item>5 days</item>
+        <item>6 days</item>
+        <item>1 week</item>
+        <item>2 weeks</item>
+        <item>3 weeks</item>
+        <item>1 month</item>
+        <item>2 months</item>
+        <item>6 months</item>
+        <item>1 year</item>
+    </string-array>
+
+    <string name="calendar_activity_name">Calendar Activity</string>
+    <string name="import_google_cal">Import Google Calendar</string>
+    <string name="calendar_event_in_android">Calendar Event In Android</string>
+    <string name="edit_calendar">Edit Calendar</string>
+    <string name="compare_calendar">Compare Calendars With Friends</string>
+    <string name="allow_visible_calendar">ALLOW FRIENDS TO SEE MY CALENDAR</string>
+    <string name="time_12am">12a</string>
+    <string name="time_2am">2a</string>
+    <string name="time_4am">4a</string>
+    <string name="time_6am">6a</string>
+    <string name="time_8am">8a</string>
+    <string name="time_10am">10a</string>
+    <string name="time_12pm">12p</string>
+    <string name="time_2pm">2p</string>
+    <string name="time_4pm">4p</string>
+    <string name="time_6pm">6p</string>
+    <string name="time_8pm">8p</string>
+    <string name="time_10pm">10p</string>
+    <string name="text_update">updating</string>
+    <string name="delete_event">Delete Event</string>
+    <string name="add_event">Add Event</string>
+    <string name="text_event_name">Event Name</string>
+    <string name="spinner_title">Day</string>
+    <string name="start_time">Start Time: Hour Min</string>
+    <string name="end_time">End Time: Hour Min</string>
+    <string name="reserve_time">Changed name</string>
+    <string name="confirm_time">Confirm Chosen Time</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="swipe_left_for_register">Swipe Left to Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="tag">Let\'s connect with your friends</string>
+    <string name="swipe_right_for_login">Swipe Right to Login</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="your_name">Full Name</string>
+    <string name="profile">Profile</string>
+    <string name="notification_sent">Notification sent to friend for time chosen.</string>
+    <string name="choose_events_to_delete">Choose Events to Delete</string>
+    <string name="add_contact">Add Contact</string>
+</resources>

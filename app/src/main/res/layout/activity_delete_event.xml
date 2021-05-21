@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/delete_event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="500dp"
+        android:text="@string/choose_events_to_delete"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="100dp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/monday_checkbox_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/delete_event_title"
+        android:text="Monday Event: All Day"/>
+
+    <CheckBox
+        android:id="@+id/wednesday_checkbox_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/monday_checkbox_delete"
+        android:text="Wednesday Event: 12am-6pm"/>
+
+    <CheckBox
+        android:id="@+id/thursday_checkbox_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wednesday_checkbox_delete"
+        android:text="Thursday Event: All Day"/>
+
+    <CheckBox
+        android:id="@+id/friday_checkbox_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monday_checkbox_delete"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thursday_checkbox_delete"
+        android:text="Friday Event: 8am-8pm"/>
+
+    <CheckBox
+        android:id="@+id/sunday_checkbox_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/friday_checkbox_delete"
+        android:visibility="invisible"
+        android:text="Sunday Event: tbd"/>
+
+    <CheckBox
+        android:id="@+id/sunday2_checkbox_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sunday_checkbox_delete"
+        android:visibility="invisible"
+        android:text="Sunday Event: tbd"/>
+
+    <Button
+        android:id="@+id/confirm_button_delete"
+        android:text="Confirm Event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="125dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sunday2_checkbox_delete"
+        android:onClick="ConfirmDeleteEvent"
+        android:layout_marginStart="125dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

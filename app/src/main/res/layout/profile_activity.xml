@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="20dp"
+            android:background="#3AAFA9">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor= "#17252a"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:layout_toRightOf="@+id/iv_image"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/numberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textSize="14sp"
+                android:textColor= "#17252a"
+                android:fontFamily="@font/cabin"
+                android:layout_toRightOf="@+id/iv_image"
+                android:layout_below="@id/nameTextView"
+                android:layout_marginLeft="10dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="-100dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#3AAFA9"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_status"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/status_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available"
+                        android:includeFontPadding="false"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:id="@+id/status_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:includeFontPadding="false"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/cabin"
+                        android:layout_below="@id/status_label"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#3AAFA9"
+                app:cardElevation="10dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_timezone"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:id="@+id/timezone_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PST"
+                        android:includeFontPadding="false"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:id="@+id/timezone_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Timezone"
+                        android:includeFontPadding="false"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/cabin"
+                        android:layout_below="@id/timezone_label"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/priority_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Priority"
+                android:layout_marginLeft="5dp"
+                android:textColor="#17252A"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                android:hint="Movies"
+                android:textColorHint="#17252A"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_movie"
+                    android:drawablePadding="10dp"
+                    android:text="Ice Age"
+                    android:textColor="#17252A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                android:hint="TV Shows"
+                android:textColorHint="#17252A"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_tv"
+                    android:drawablePadding="10dp"
+                    android:text="Breaking Bad"
+                    android:textColor="#17252A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                android:hint="Music"
+                android:textColorHint="#17252A"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_music"
+                    android:drawablePadding="10dp"
+                    android:text="Michael Jackson"
+                    android:textColor="#17252A"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3AAFA9"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="Update"
+                android:textColor="#17252A"
+                app:backgroundTint="#3AAFA9"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
